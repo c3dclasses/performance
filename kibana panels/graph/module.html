@@ -1,0 +1,5 @@
+<div ng-controller='graph' ng-init="init()" style="width:100%; min-height:{{panel.height || row.height}}">    			
+  <span style="float:left; position: absolute;" class="ng-binding"><b>Last Update:</b> {{panel.value_last_update}} </span>
+  <div graph-area class="pointer graph-area" params="{{panel}}" style="width:100%; height:517px">
+  </div>
+</div>

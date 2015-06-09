@@ -1,0 +1,20 @@
+<div class="editor-row">
+  <div class="section">
+	<div>
+		<h5>Thresholds</h5>
+		<label class="small">Web Services (in milliseconds) <tip>This shows a threshold marking for the panel</tip></label>
+	    <input ng-change="set_refresh(true)" placeholder="Start typing" bs-typeahead="fields.list" type="text" class="input-medium" ng-model="panel.value_field_threshold_webservice">
+		<label class="small">Databases (in milliseconds) <tip>This shows a threshold for the panel</tip></label>
+	    <input ng-change="set_refresh(true)" placeholder="Start typing" bs-typeahead="fields.list" type="text" class="input-medium" ng-model="panel.value_field_threshold_database">
+		<label class="small">Other (in milliseconds)<tip>This shows a threshold marking on for the panel</tip></label>
+	    <input ng-change="set_refresh(true)" placeholder="Start typing" bs-typeahead="fields.list" type="text" class="input-medium" ng-model="panel.value_field_threshold_other">
+	</div>
+  </div>
+  <div class="section">
+	<div>
+		<h5>Averages</h5>
+		<label class="small">Compute Metric Averages For Last (in minutes): <tip>Enter the Number of Minutes to Compute Metric Averages For (Ex. enter 5 to compute metric averages for last 5 minutes) </tip></label>
+	    <input ng-change="set_refresh(true)" placeholder="Start typing" bs-typeahead="fields.list" type="text" class="input-medium" ng-model="panel.value_field_avgforlastminutes">
+	</div>
+  </div>
+</div>
